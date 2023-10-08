@@ -11,10 +11,8 @@
         {% block javascripts %}
         {% endblock %}
     </head>
-    <body>
-        <h1 class="text-3xl font-bold underline text-blue-700">
-            Hello world!
-        </h1>
+    <body class="background">
+        {% include "includes/_nav.html.twig" %}
         {% block body %}{% endblock %}
     </body>
 </html>

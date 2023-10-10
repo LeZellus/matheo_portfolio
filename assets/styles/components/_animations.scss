@@ -1,0 +1,14 @@
+.circle {
+  @apply w-2.5 h-2.5 absolute pointer-events-none opacity-70 z-50;
+  animation: escape 2s linear;
+}
+
+@keyframes escape {
+  to {
+    transform: translate(
+                    calc(var(--dx, 0) * 200px),
+                    calc(var(--dy, 0) * 200px)
+    );
+    opacity: 0;
+  }
+}

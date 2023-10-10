@@ -3,9 +3,11 @@
 {% block title %}Portfolio Mathéo Zeller{% endblock %}
 
 {% block body %}
-    <main class="min-h-screen flex flex-col items-center justify-center">
-        <p class="text-gray-400">Salut à toi ! Je suis</p>
-        <h1>Mathéo Zeller</h1>
-        <p>Développeur et artiste curieux</p>
+    <main class="min-h-screen">
+        {{ include('home/includes/_home.html.twig') }}
+        {{ include('home/includes/_me.html.twig') }}
+        {{ include('home/includes/_competences.html.twig') }}
+        {{ include('home/includes/_games.html.twig') }}
+        {{ include('home/includes/_hobbies.html.twig') }}
     </main>
 {% endblock %}

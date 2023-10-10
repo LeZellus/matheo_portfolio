@@ -6,23 +6,51 @@
 
 
 body {
-  @apply text-gray-600;
+  @apply text-gray-400;
   font-family: "Lexend", sans-serif;
+  background-size: contain;
 }
 
-.background {
-  background: linear-gradient(90deg, #0000 calc(100% - 1px), #f3f4f6 0) fixed;
-  background-size: calc((100% - 5*5px)/6 + 5px) 100%;
+main {
+  @apply flex flex-col items-center;
+}
+
+section {
+  @apply px-4 md:px-8 lg:px-16 grid gap-8 max-w-7xl py-16;
 }
 
 h1 {
   @apply text-4xl md:text-5xl lg:text-6xl font-bold text-teal-300;
 }
 
-a {
-  @apply text-teal-300 decoration-0 hover:text-teal-500 transition duration-300;
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl text-teal-300 text-center mb-8;
+}
+
+strong {
+  @apply text-teal-100;
+}
+
+nav a {
+  @apply text-darkgray-300 decoration-0 hover:text-teal-500 transition duration-300;
+}
+
+.active {
+  @apply text-teal-300;
 }
 
 p {
-  @apply text-lg md:text-xl lg:text-2xl;
+  @apply text-lg;
+}
+
+.button {
+  @apply bg-darkgray-900 text-teal-300 rounded-lg px-6 py-4 justify-self-center hover:scale-105 transition duration-300;
+}
+
+.competences {
+  @apply border border-teal-100 rounded-lg p-8 bg-darkgray hover:scale-105 hover:bg-teal-300 hover:text-darkgray transition duration-300 flex items-center justify-center;
+}
+
+.list-item {
+  @apply cursor-pointer hover:scale-105 transition duration-300;
 }

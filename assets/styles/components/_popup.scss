@@ -1,0 +1,16 @@
+.popup {
+  @apply fixed -bottom-full left-0 w-full bg-darkgray h-[calc(100%-8rem)] border-t border-darkgray-900 p-4 md:p-8 lg:p-16 grid auto-rows-min z-50 gap-4 lg:gap-8 overflow-y-scroll;
+  transition: bottom 0.3s;
+}
+
+.close-popup {
+  @apply bg-darkgray-900 text-teal-300 rounded-lg px-6 py-4 justify-self-center;
+}
+
+.popup.active {
+  bottom: 0;
+}
+
+.background-overlay {
+  @apply fixed top-0 left-0 w-full h-full bg-darkgray bg-opacity-60 z-30;
+}

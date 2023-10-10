@@ -1,0 +1,36 @@
+<section id="games">
+    <h2>Mes jeux favoris</h2>
+    <p class="text-center">Les jeux occupent une place spéciale dans ma vie. En dehors de mes obligations quotidiennes, ils sont mon évasion préférée. Du frisson des jeux de stratégie aux moments décontractés passés à explorer des mondes fantastiques, je trouve un équilibre parfait entre divertissement et détente grâce à eux. Les jeux sont mon passe-temps favori, un moyen de me connecter avec d'autres passionnés, de partager des expériences et de créer des souvenirs mémorables. Alors, si vous cherchez quelqu'un pour rejoindre votre prochaine aventure, je suis partant ! 🎮</p>
+    <p class="text-center">Voici une liste non-exhaustive des jeux que j'apprécie :</p>
+
+    <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-16">
+        <li class="list-item text-center" data-content="dofus">
+            <img class="w-16 h-16 mx-auto mb-4" src="{{ asset('images/dofus/dofus.png') }}" alt="">
+            <p>Dofus</p>
+        </li>
+        <li class="list-item text-center" data-content="patrick">
+            <img class="w-16 h-16 mx-auto mb-4" src="{{ asset('images/patrick/patrick.ico') }}" alt="">
+            <p>Patrick's Parabox</p>
+        </li>
+        <li class="list-item text-center" data-content="enterthegungeon">
+            <img class="w-16 h-16 mx-auto mb-4" src="{{ asset('images/enter/enter_the_gungeon.png') }}" alt="">
+            <p>Enter the gungeon</p>
+        </li>
+        <li class="list-item text-center" data-content="celeste">
+            <img class="w-16 h-16 mx-auto mb-4" src="{{ asset('images/celeste/celeste.png') }}" alt="">
+            <p>Celeste</p>
+        </li>
+    </ul>
+
+    {{ include('home/includes/popups/_dofus.html.twig') }}
+    {{ include('home/includes/popups/_patrick.html.twig') }}
+    {{ include('home/includes/popups/_enter.html.twig') }}
+    {{ include('home/includes/popups/_celeste.html.twig') }}
+
+    <p class="text-center text-teal-300">Envie de me rejoindre sur une partie ? Ajoutez moi !</p>
+    <div class="flex justify-center space-x-4">
+        <a class="button" href="https://steamcommunity.com/id/zellr/">Steam</a>
+        <a class="button" href="https://account.ankama.com/fr/profil-ankama/petdenone-1545">Dofus</a>
+        <a class="button" href="https://store.epicgames.com/fr/u/9e1e326220c34626876236ec40738d2c">EpicG</a>
+    </div>
+</section>
